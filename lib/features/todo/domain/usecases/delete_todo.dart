@@ -3,7 +3,7 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class DeleteTodo implements UsecaseWithSuccessType<bool, String> {
   final TodoRepository repository;
-  DeleteTodo(this.repository);
+  const DeleteTodo(this.repository);
 
   @override
   bool call(String id) {

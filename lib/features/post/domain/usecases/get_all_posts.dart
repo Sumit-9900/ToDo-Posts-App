@@ -6,7 +6,7 @@ import 'package:todo_post_app/features/post/domain/repository/post_repository.da
 
 class GetAllPosts implements Usecase<List<Post>, NoParams> {
   final PostRepository postRepository;
-  GetAllPosts(this.postRepository);
+  const GetAllPosts(this.postRepository);
 
   @override
   Future<Either<Failure, List<Post>>> call(NoParams params) async {

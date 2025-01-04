@@ -5,7 +5,7 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class SaveTheme implements Usecase<void, bool> {
   final TodoRepository todoRepository;
-  SaveTheme(this.todoRepository);
+  const SaveTheme(this.todoRepository);
 
   @override
   Future<Either<Failure, void>> call(bool isDarkMode) async {

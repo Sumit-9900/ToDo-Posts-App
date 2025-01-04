@@ -4,7 +4,7 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class GetTodos implements UsecaseWithSuccessType<List<Todo>, NoParams> {
   final TodoRepository todoRepository;
-  GetTodos(this.todoRepository);
+  const GetTodos(this.todoRepository);
   
   @override
   List<Todo> call(NoParams params) {

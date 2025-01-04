@@ -3,7 +3,7 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class GetTheme implements UsecaseWithSuccessType<bool, NoParams> {
   final TodoRepository todoRepository;
-  GetTheme(this.todoRepository);
+  const GetTheme(this.todoRepository);
 
   @override
   bool call(NoParams params) {

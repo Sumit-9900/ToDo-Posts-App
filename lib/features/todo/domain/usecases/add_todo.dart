@@ -6,7 +6,8 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class AddTodo implements Usecase<void, Todo> {
   final TodoRepository todoRepository;
-  AddTodo(this.todoRepository);
+  const AddTodo(this.todoRepository);
+
   @override
   Future<Either<Failure, void>> call(Todo todo) async {
     return await todoRepository.addTodo(todo);

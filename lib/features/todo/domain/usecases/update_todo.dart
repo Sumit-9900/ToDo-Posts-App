@@ -5,7 +5,7 @@ import 'package:todo_post_app/features/todo/domain/repository/todo_repository.da
 
 class UpdateTodo implements Usecase<bool, UpdateTodoParams> {
   final TodoRepository todoRepository;
-  UpdateTodo(this.todoRepository);
+  const UpdateTodo(this.todoRepository);
 
   @override
   Future<Either<Failure, bool>> call(UpdateTodoParams params) async {

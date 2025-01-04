@@ -18,7 +18,7 @@ class TodoPage extends StatefulWidget {
 }
 
 class _TodoPageState extends State<TodoPage> {
-  final TextEditingController taskController = TextEditingController();
+  final taskController = TextEditingController();
 
   @override
   void initState() {

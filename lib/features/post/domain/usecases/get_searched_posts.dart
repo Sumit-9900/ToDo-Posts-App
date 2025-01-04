@@ -6,7 +6,7 @@ import 'package:todo_post_app/features/post/domain/repository/post_repository.da
 
 class GetSearchedPosts implements Usecase<List<Post>, String> {
   final PostRepository repository;
-  GetSearchedPosts(this.repository);
+  const GetSearchedPosts(this.repository);
 
   @override
   Future<Either<Failure, List<Post>>> call(String query) async {
